@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Τίτλος της σελίδας</title>
+    <title>Ελαχιστες Απαιτησεις</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+    </style>
   </head>
   <body>
-    <h1>Κείμενο επικεφαλίδας</h1>
+    <h1>Ελαχιστες Απαιτησεις</h1>
     <table>
         <tr>
-          <th>Header 1</th>
-          <th>Header 2</th>
+          <th>Τρέχον έτος :</th>
+          <th>Ποσοστό «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών</th>
+          <th>Μέσος όρος των «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών </th>
+          <th>Πιστοποιητικό γνώσης της αγγλικής γλώσσας </th>
         </tr>
         <tr>
-          <td>Τρέχον έτος σπουδών</td>
-          <td>Ποσοστό «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών</td>
-          <td>Μέσος όρος των «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών </td>
-          <td>Πιστοποιητικό γνώσης της αγγλικής γλώσσας </td>
-          <td>Τρέχον έτος σπουδών </td>
+          <td>
+            <label for="year"></label>
+            <select name="year" id="year">
+              <option value="1o">1ο ετος</option>
+              <option value="2o">2ο ετος</option>
+              <option value="3o">3ο ετος</option>
+              <option value="4o">4ο ετος</option>
+              <option value="Μεγαλυτερο">Μεγαλυτερο</option>
+            </select>
+          </td>  
+          <td><input type="number" name="integer" min="1" max="100"></td>
+          <td><input type="number" min="1" max="100" step="0.1"></td>
+          <td>
+            <label><input type="radio" name="certificate" value="a1"> A1</label>
+            <label><input type="radio" name="certificate" value="a2"> A2</label>
+            <label><input type="radio" name="certificate" value="b1"> B1</label>
+            <label><input type="radio" name="certificate" value="b2"> B2</label>
+            <label><input type="radio" name="certificate" value="c1"> C1</label>
+            <label><input type="radio" name="certificate" value="c2"> C2</label>
+          </td>
+         
         </tr>
       </table>
   </body>
