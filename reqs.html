@@ -1,45 +1,164 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ελαχιστες Απαιτησεις</title>
-    <style>
-      body {
-        background-color: lightblue;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erasmus Application</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <h1>Ελαχιστες Απαιτησεις</h1>
-    <table>
-        <tr>
-          <th>Τρέχον έτος :</th>
-          <th>Ποσοστό «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών</th>
-          <th>Μέσος όρος των «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών </th>
-          <th>Πιστοποιητικό γνώσης της αγγλικής γλώσσας </th>
-        </tr>
-        <tr>
-          <td>
-            <label for="year"></label>
-            <select name="year" id="year">
-              <option value="1o">1ο ετος</option>
-              <option value="2o">2ο ετος</option>
-              <option value="3o">3ο ετος</option>
-              <option value="4o">4ο ετος</option>
-              <option value="Μεγαλυτερο">Μεγαλυτερο</option>
+    <nav class="my_nav">
+      <a href="index.html" class="nav_main_img">
+        <img src="assets/erasmus.png" class="nav_img" />
+      </a>
+
+      <ul class="nav_right_items">
+        <li class="nav_li">
+          <a class="nav_item" href="more.html">More</a>
+        </li>
+        <li class="nav_li">
+          <a class="nav_item" href="reqs.html">Reqs</a>
+        </li>
+        <li class="nav_li">
+          <a class="nav_item" href="application.html">Application</a>
+        </li>
+        <li class="nav_li">
+          <a class="nav_item" href="register.html">Login/Register</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="custom_main">
+      <section class="custom_section">
+        <h1>Ελαχιστες Απαιτησεις</h1>
+        <table>
+          <tr>
+            <th>Ελάχιστο έτος σπουδών</th>
+            <th>
+              Ποσοστό «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών
+            </th>
+            <th>
+              Μέσος όρος των «περασμένων» μαθημάτων έως το προηγούμενο έτος
+              σπουδών
+            </th>
+            <th>Πιστοποιητικό γνώσης της αγγλικής γλώσσας</th>
+          </tr>
+          <tr>
+            <td>>= 2</td>
+            <td>>= 70% των συνολικών μαθημάτων</td>
+            <td>>= 6.5</td>
+            <td>
+              κατ’ ελάχιστον «καλή γνώση της αγγλικής γλώσσας», που αντιστοιχεί
+              σε επίπεδο B2 ή ανώτερο
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="custom_section section_test">
+        <h1>Έλεγχος Πληρότητας Απαιτήσεων</h1>
+        <form class="custom_form">
+          <div class="input_pair">
+            <label for="study_year" class="custom_label">Έτος σπουδών:</label>
+            <select id="study_year" class="custom_input">
+              <option selected disabled value="">Επίλεξε έτος σπουδών:</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="4+">Μεγαλυτερο</option>
             </select>
-          </td>  
-          <td><input type="number" name="integer" min="1" max="100"></td>
-          <td><input type="number" min="1" max="100" step="0.1"></td>
-          <td>
-            <label><input type="radio" name="certificate" value="a1"> A1</label>
-            <label><input type="radio" name="certificate" value="a2"> A2</label>
-            <label><input type="radio" name="certificate" value="b1"> B1</label>
-            <label><input type="radio" name="certificate" value="b2"> B2</label>
-            <label><input type="radio" name="certificate" value="c1"> C1</label>
-            <label><input type="radio" name="certificate" value="c2"> C2</label>
-          </td>
-         
-        </tr>
-      </table>
+          </div>
+          <div class="input_pair">
+            <label for="courses_p" class="custom_label"
+              >Ποσοστό περασμένων μαθημάτων:</label
+            >
+            <input
+              id="courses_p"
+              type="number"
+              min="0"
+              max="100"
+              class="custom_input courses_percentage"
+              placeholder="Ποσοστό περασμένων μαθημάτων..."
+            />
+          </div>
+          <div class="input_pair">
+            <label for="courses_average" class="custom_label"
+              >M.O περασμένων μαθημάτων:</label
+            >
+            <input
+              id="courses_average"
+              type="number"
+              min="0"
+              max="10"
+              class="custom_input courses_percentage"
+              placeholder="M.O περασμένων μαθημάτων..."
+            />
+          </div>
+          <div class="radio_wrapper">
+            <p class="custom_label">Πτυχίο Αγγλικής Γλώσσας</p>
+            <div>
+              <div class="input_pair">
+                <label for="cer_a1" class="custom_label">A1</label>
+                <input type="radio" name="certificate" value="a1" id="cer_a1" />
+              </div>
+
+              <div class="input_pair">
+                <label for="cer_a2" class="custom_label">A2</label>
+                <input type="radio" name="certificate" value="a2" id="cer_a2" />
+              </div>
+
+              <div class="input_pair">
+                <label for="cer_b1" class="custom_label">B1</label>
+                <input type="radio" name="certificate" value="b1" id="cer_b1" />
+              </div>
+              <div class="input_pair">
+                <label for="cer_b2" class="custom_label">B2</label>
+                <input type="radio" name="certificate" value="b2" id="cer_b2" />
+              </div>
+              <div class="input_pair">
+                <label for="cer_c1" class="custom_label">C1</label>
+                <input type="radio" name="certificate" value="c1" id="cer_c1" />
+              </div>
+              <div class="input_pair">
+                <label for="cer_c2" class="custom_label">C2</label>
+                <input type="radio" name="certificate" value="c2" id="cer_c2" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- <table>
+      <tr>
+        <th>Τρέχον έτος :</th>
+        <th>Ποσοστό «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών</th>
+        <th>
+          Μέσος όρος των «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών
+        </th>
+        <th>Πιστοποιητικό γνώσης της αγγλικής γλώσσας</th>
+      </tr>
+      <tr>
+        <td>
+          <label for="year"></label>
+          <select name="year" id="year">
+            <option value="1o">1ο ετος</option>
+            <option value="2o">2ο ετος</option>
+            <option value="3o">3ο ετος</option>
+            <option value="4o">4ο ετος</option>
+            <option value="Μεγαλυτερο">Μεγαλυτερο</option>
+          </select>
+        </td>
+        <td><input type="number" name="integer" min="1" max="100" /></td>
+        <td><input type="number" min="1" max="100" step="0.1" /></td>
+        <td>
+          <label><input type="radio" name="certificate" value="a1" /> A1</label>
+          <label><input type="radio" name="certificate" value="a2" /> A2</label>
+          <label><input type="radio" name="certificate" value="b1" /> B1</label>
+          <label><input type="radio" name="certificate" value="b2" /> B2</label>
+          <label><input type="radio" name="certificate" value="c1" /> C1</label>
+          <label><input type="radio" name="certificate" value="c2" /> C2</label>
+        </td>
+      </tr>
+    </table> -->
   </body>
 </html>
