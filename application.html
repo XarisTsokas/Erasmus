@@ -9,7 +9,7 @@
   <body>
     <nav class="my_nav">
       <a href="index.html" class="nav_main_img">
-        <img src="assets/erasmus.png" class="nav_img" />
+        <img src="media/erasmus.png" class="nav_img" />
       </a>
 
       <ul class="nav_right_items">
@@ -27,8 +27,161 @@
         </li>
       </ul>
     </nav>
-    <h1>Φορμα Αιτησης Μετακινησης</h1>
-    <p></p>
-    <a href="https://www.example.com">Κουμπί σύνδεσης σε άλλη σελίδα</a>
+    <main class="custom_main">
+      <section class="custom_section ">
+        <h1>Φορμα Αιτησης Μετακινησης</h1>
+        <form class="custom_form">
+        <div class="input_pair">
+          <label for="name" class="custom_label">Ονομα:</label>
+          <input
+                id="name"
+                type="text"
+                class="custom_input "
+                placeholder="Ονομα"
+          />
+        </div>
+        <div class="input_pair">
+          <label for="surname" class="custom_label">Επιθετο:</label>
+          <input
+                id="surname"
+                type="text"
+                class="custom_input "
+                placeholder="Επιθετο"
+          />
+        </div>
+        <div class="input_pair">
+          <label for="am" class="custom_label">Αριθμός Μητρώου:</label>
+          <input
+                id="am"
+                type="text"
+                class="custom_input "
+                placeholder="AM"
+          />
+        </div>
+        <div class="input_pair">
+          <label for="courses_percentage" class="custom_label">Ποσοστο περασμένων μαθηματων:</label>
+          <input
+                id="courses_percentage"
+                type="number"
+                class="custom_input "
+                placeholder="Αριθμος Μαθηματων"
+          />
+        </div>
+        <div class="input_pair">
+          <label for="average" class="custom_label">Μεσος ορος περαμενων μαθηματων:</label>
+          <input
+                id="average"
+                type="number"
+                class="custom_input "
+                placeholder="Μεσος Ορος"
+          />
+        </div>
+        <div class="radio_wrapper">
+          <p class="custom_label">Πτυχίο Αγγλικής Γλώσσας</p>
+          <div>
+
+            <div class="input_pair">
+              <label for="cer_a1" class="custom_label">A1</label>
+              <input type="radio" name="certificate" value="a1" id="cer_a1" />
+            </div>
+
+            <div class="input_pair">
+              <label for="cer_a2" class="custom_label">A2</label>
+              <input type="radio" name="certificate" value="a2" id="cer_a2" />
+            </div>
+
+            <div class="input_pair">
+              <label for="cer_b1" class="custom_label">B1</label>
+              <input type="radio" name="certificate" value="b1" id="cer_b1" />
+            </div>
+
+            <div class="input_pair">
+              <label for="cer_b2" class="custom_label">B2</label>
+              <input type="radio" name="certificate" value="b2" id="cer_b2" />
+            </div>
+
+            <div class="input_pair">
+              <label for="cer_c1" class="custom_label">C1</label>
+              <input type="radio" name="certificate" value="c1" id="cer_c1" />
+            </div>
+
+            <div class="input_pair">
+              <label for="cer_c2" class="custom_label">C2</label>
+              <input type="radio" name="certificate" value="c2" id="cer_c2" />
+            </div>
+
+           </div>
+        </div>
+        <br>
+        <div class="radio_wrapper ">
+          <p class="custom_label">Γνωση επιπλεον ξενων γλωσσων</p>
+          <div>
+            <div class="input_pair">
+              <label for="yes" class="custom_label">ΝΑΙ</label>
+              <input type="radio" name="certificate" value="ΝΑΙ" id="yes" />
+            </div>
+
+            <div class="input_pair">
+              <label for="no" class="custom_label">ΟΧΙ</label>
+              <input type="radio" name="certificate" value="ΟΧΙ" id="no" />
+            </div>
+          </div>
+        </div>
+        <div class="input_pair">
+          <label for="uni1" class="custom_label">Πανεπιστήμιο - 1η επιλογή :</label>
+          <select id="uni1" name="uni1">
+            <option value="uni_ex1">Πανεπιστημιο 1</option>
+            <option value="uni_ex2">Πανεπιστημιο 2</option>
+          </select> 
+        </div>
+        <br>
+        <div class="input_pair">
+          <label for="uni2" class="custom_label">Πανεπιστήμιο - 2η επιλογή :</label>
+          <select id="uni2" name="uni2">
+            <option value="uni_ex1">Πανεπιστημιο 1</option>
+            <option value="uni_ex2">Πανεπιστημιο 2</option>
+          </select> 
+        </div>
+        <br>
+        <div class="input_pair">
+          <label for="uni3" class="custom_label">Πανεπιστήμιο - 3η επιλογή :</label>
+          <select id="uni3" name="uni3">
+            <option value="uni_ex1">Πανεπιστημιο 1</option>
+            <option value="uni_ex2">Πανεπιστημιο 2</option>
+          </select> 
+        </div>
+        <br>
+        <div class="input_pair">
+          <form  method="post" >
+            <label for="file">Αναλυτική βαθμολογία:</label>
+            <input type="file" id="file" name="file">
+            <input type="submit" value="Upload" name="submit">
+          
+          
+        </div>
+        <br>
+        <div class="input_pair">
+          <form  method="post">
+            <label for="file"> Πτυχίο αγγλικής γλώσσας:</label>
+            <input type="file" id="file" name="file">
+            <input type="submit" value="Upload" name="submit">
+          
+          
+        </div>
+        <br>
+        <div class="input_pair">
+          <form  method="post">
+            <label for="file"> Πτυχία άλλων ξένων γλωσσών:</label>
+            <input type="file" id="file" name="file">
+            <input type="submit" value="Upload" name="submit">
+          
+          
+        </div>
+        
+      </form>
+      </section>
+    
+    
+    </main>
   </body>
 </html>

@@ -10,7 +10,7 @@
   <body>
     <nav class="my_nav">
       <a href="index.html" class="nav_main_img">
-        <img src="assets/erasmus.png" class="nav_img" />
+        <img src="media/erasmus.png" class="nav_img" />
       </a>
 
       <ul class="nav_right_items">
@@ -54,7 +54,7 @@
           </tr>
         </table>
       </section>
-      <section class="custom_section section_test">
+      <section class="custom_section ">
         <h1>Έλεγχος Πληρότητας Απαιτήσεων</h1>
         <form class="custom_form">
           <div class="input_pair">
@@ -70,14 +70,13 @@
           </div>
           <div class="input_pair">
             <label for="courses_p" class="custom_label"
-              >Ποσοστό περασμένων μαθημάτων:</label
-            >
+              >Ποσοστό περασμένων μαθημάτων:</label>
             <input
               id="courses_p"
               type="number"
               min="0"
               max="100"
-              class="custom_input courses_percentage"
+              class="custom_input "
               placeholder="Ποσοστό περασμένων μαθημάτων..."
             />
           </div>
@@ -90,7 +89,7 @@
               type="number"
               min="0"
               max="10"
-              class="custom_input courses_percentage"
+              class="custom_input "
               placeholder="M.O περασμένων μαθημάτων..."
             />
           </div>
@@ -128,37 +127,5 @@
         </form>
       </section>
     </main>
-    <!-- <table>
-      <tr>
-        <th>Τρέχον έτος :</th>
-        <th>Ποσοστό «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών</th>
-        <th>
-          Μέσος όρος των «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών
-        </th>
-        <th>Πιστοποιητικό γνώσης της αγγλικής γλώσσας</th>
-      </tr>
-      <tr>
-        <td>
-          <label for="year"></label>
-          <select name="year" id="year">
-            <option value="1o">1ο ετος</option>
-            <option value="2o">2ο ετος</option>
-            <option value="3o">3ο ετος</option>
-            <option value="4o">4ο ετος</option>
-            <option value="Μεγαλυτερο">Μεγαλυτερο</option>
-          </select>
-        </td>
-        <td><input type="number" name="integer" min="1" max="100" /></td>
-        <td><input type="number" min="1" max="100" step="0.1" /></td>
-        <td>
-          <label><input type="radio" name="certificate" value="a1" /> A1</label>
-          <label><input type="radio" name="certificate" value="a2" /> A2</label>
-          <label><input type="radio" name="certificate" value="b1" /> B1</label>
-          <label><input type="radio" name="certificate" value="b2" /> B2</label>
-          <label><input type="radio" name="certificate" value="c1" /> C1</label>
-          <label><input type="radio" name="certificate" value="c2" /> C2</label>
-        </td>
-      </tr>
-    </table> -->
   </body>
 </html>
